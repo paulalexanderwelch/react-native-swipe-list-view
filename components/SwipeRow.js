@@ -13,7 +13,7 @@ import {
 	View
 } from 'react-native';
 
-const DIRECTIONAL_DISTANCE_CHANGE_THRESHOLD = 2;
+const DIRECTIONAL_DISTANCE_CHANGE_THRESHOLD = Platform.OS === 'ios' ? 2 : 20;
 const PREVIEW_OPEN_DELAY = 700;
 const PREVIEW_CLOSE_DELAY = 300;
 
